@@ -1,0 +1,10 @@
+fastapi==0.112.0
+uvicorn==0.30.5
+pydantic==2.10.4
+SQLAlchemy==2.0.31
+requests==2.32.3
+numpy==1.26.4
+pandas==2.2.3
+pydantic[email]
+aiosqlite
+greenlet

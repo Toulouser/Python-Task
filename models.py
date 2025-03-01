@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ARRAY
+from sqlalchemy import Column, Integer, String, ARRAY, Text
 from database import Base
 
 class User(Base):
@@ -10,5 +10,6 @@ class User(Base):
     gender = Column(String)
     email = Column(String, unique=True, index=True)
     city = Column(String, index=True)
-    interests = Column(ARRAY(String))
+    interests = Column(Text)
+    version = Column(Integer, default=0)
 
